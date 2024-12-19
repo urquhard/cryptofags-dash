@@ -42,8 +42,8 @@ def init_dashboard(server):
             table2
         ])
 
-    # Assign the layout function to the Dash app
     # This ensures the layout (and therefore data load) happens on every page load.
+    # Refresh page = new data
     dash_app.layout = serve_layout
 
     return dash_app
